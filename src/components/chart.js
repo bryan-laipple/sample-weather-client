@@ -10,10 +10,12 @@ export default props => {
   const color = props.color || 'gray';
   const units = props.units || '';
   return (
-    <Sparklines height={height} width={width} data={props.data}>
-      <SparklinesLine color={color} />
-      <SparklinesReferenceLine type="avg" />
+    <div>
+      <Sparklines height={height} width={width} data={props.data}>
+        <SparklinesLine color={color} />
+        <SparklinesReferenceLine type="avg" />
+      </Sparklines>
       <div>{average(props.data)} {props.units}</div>
-    </Sparklines>
+    </div>
   );
 }
