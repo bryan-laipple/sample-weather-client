@@ -33,6 +33,7 @@ module.exports = {
       favicon: 'image/favicon.ico',
       template: 'index.template.ejs',
       inject: 'body',
+      googleMapsParams: 'v=3.29',
     })
   ],
   module: {

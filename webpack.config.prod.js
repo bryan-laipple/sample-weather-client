@@ -37,6 +37,12 @@ module.exports = {
       favicon: 'image/favicon.ico',
       template: 'index.template.ejs',
       inject: 'body',
+      googleMapsParams: `v=3.29&key=${env.GOOGLE_MAPS_API_KEY}`,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        keepClosingSlash: true
+      }
     })
   ],
   module: {

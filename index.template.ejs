@@ -3,17 +3,16 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Forecast</title>
-		<base href="/">
 		<meta name="viewport" content="width=device-width,initial-scale=1"/>
 		<!-- NOTE: integrity attribute can cause double fetching
 		https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf -->
 		<link rel="stylesheet"
 			  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 			  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-			  crossorigin="anonymous">
+			  crossorigin="anonymous"/>
 	</head>
 	<body>
 		<div class="container"></div>
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?<%= htmlWebpackPlugin.options.googleMapsParams %>"></script>
 	</body>
 </html>
