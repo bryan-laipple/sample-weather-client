@@ -34,6 +34,7 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new HtmlWebpackPlugin({
+      favicon: 'image/favicon.ico',
       template: 'index.template.ejs',
       inject: 'body',
     })

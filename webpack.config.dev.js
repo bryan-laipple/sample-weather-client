@@ -30,6 +30,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin('bundle.css'),
     new HtmlWebpackPlugin({
+      favicon: 'image/favicon.ico',
       template: 'index.template.ejs',
       inject: 'body',
     })

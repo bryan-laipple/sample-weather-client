@@ -1,7 +1,7 @@
 /node_modules
 /dist
 env.json
-bundle.js
+run-deploy.sh
 npm-debug.log
 .DS_Store
 
